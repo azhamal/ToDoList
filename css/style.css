@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Abril Fatface', cursive ;
+}
+button{
+    text-decoration: none;
+}
+body {
+    max-width: 1200px;
+    background-color: rgb(123, 142, 204);
+}
+.container {
+    display: flex;
+    justify-content: center;
+    margin: 70px;
+}
+.container > div {
+    padding: 2rem 5rem;
+    border: none;
+    box-shadow: 1px 21px 38px 15px rgba(34,60,80,0.3);
+    border-radius: 10px;
+    background-color: white;
+}
+.addTodoBlock {
+    display: flex;
+    gap:5px;
+}
+.addTodoBlock input{
+padding: 10px;
+}
+.addTodoBlock button {
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(17, 158, 158);
+    color: white;
+    cursor: pointer;
+}
+.todo-list >div{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.done {
+    text-decoration: line-through;
+    
+}
+.active{
+    text-decoration: none;
+}
+.deleteTodo{
+    background-image: url(../icons8-trash-can.svg);
+    background-color: #fff;
+    padding: 13px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
+@media (max-width:375px) {
+    .addTodoBlock{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 8px;
+        border-radius: 15px;
+    }
+    
+        input {
+            display: flex;
+            width: 85px;
+            margin-left: 8%;
+            border-radius: 15px;
+           
+        }
+        .todo-list{
+            margin-top: 7px;
+        }
+        .addTodoBlock button{
+            background-color: aqua;
+            width: 60px;
+            font-size: 10px;
+            color: #000;
+            height: 35px;
+            margin-right: 5%;
+            border-radius: 10px;
+        }
+        .deleteTodo{
+            padding: 10px;
+            background-size: contain;
+        }
+    }
+
+   
+    
+
